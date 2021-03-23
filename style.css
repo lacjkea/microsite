@@ -5,17 +5,20 @@ img {
 body {
   background-color: #f59f7a;
 }
-
-header {
+video {
+  /* lacj */
+  max-width: 100%;
+}
+/* header {
   position: relative;
   background-color: black;
   height: 75vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
-}
+} */
 
-header video {
+/* header video {
   position: absolute;
   top: 100%;
   left: 60%;
@@ -28,7 +31,7 @@ header video {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-}
+} */
 
 header .container {
   position: relative;
@@ -37,8 +40,8 @@ header .container {
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url("dreng_spiser_slik_2.mp4") black no-repeat center center
-      scroll;
+    /* lacj background: url("dreng_spiser_slik_2.mp4") black no-repeat center center
+      scroll; */
   }
   header video {
     display: none;
@@ -99,17 +102,19 @@ p {
 #produkter,
 #ingredienser,
 #join {
-  margin-top: 250px;
+  /* margin-top: 250px; lacj */
   margin-bottom: 250px;
   min-height: 700px;
 }
 
-#section10 a {
+/* lacj */
+#section10 {
+  position: relative;
   padding-top: 60px;
 }
-#section10 a span {
+#section10 span {
   position: absolute;
-  top: 90%;
+  top: 0;
   left: 50%;
   width: 30px;
   height: 50px;
@@ -118,7 +123,7 @@ p {
   border-radius: 50px;
   box-sizing: border-box;
 }
-#section10 a span::before {
+#section10 span::before {
   position: absolute;
   top: 10px;
   left: 50%;
@@ -132,6 +137,7 @@ p {
   animation: sdb10 2s infinite;
   box-sizing: border-box;
 }
+
 @-webkit-keyframes sdb10 {
   0% {
     -webkit-transform: translate(0, 0);
